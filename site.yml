@@ -1,0 +1,11 @@
+- hosts: default
+  connection: local
+  gather_facts: no
+  vars_files:
+    - other_vars.yml
+  tasks:
+    - debug:
+        var: a
+
+    - debug:
+        var: foo
